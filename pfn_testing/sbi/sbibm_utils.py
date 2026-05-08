@@ -1,8 +1,8 @@
 """Shared SBIBM utilities for simulation, evaluation, and metrics.
 
 Reusable by any inference method (TabPFN-NPE, NPE, BayesFlow, etc.).
-Each method just needs to provide a `sample_fn(x_obs) -> samples` callable
-to use `evaluate_posterior`.
+Inference methods provide a `sample_fn(x_obs) -> samples` callable for
+`evaluate_posterior`.
 
 ODE tasks (sir, lotka_volterra) use Python/scipy simulators instead of
 Julia/diffeqtorch, matching sbibm's exact specifications.
@@ -49,7 +49,7 @@ AVAILABLE_TASKS: list[str] = [
     "sir_distractors",
 ]
 
-# Tasks whose simulator we replace with Python (Julia/diffeqtorch is broken)
+# Tasks whose simulator we replace with Python/scipy for portability.
 ODE_TASKS: set[str] = {"sir", "lotka_volterra"}
 
 # Lazy-initialized custom tasks (avoid expensive init at import time)

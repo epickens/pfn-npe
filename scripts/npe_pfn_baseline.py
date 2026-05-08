@@ -1,8 +1,8 @@
 """Run NPE-PFN (autoregressive TabPFN density estimator) on a benchmark task.
 
-Wraps mackelab/npe-pfn's `TabPFN_Based_NPE_PFN` for our standard benchmark
-pipeline: simulate the task, attach the simulations, draw 1000 samples per
-sbibm reference observation, and save in the same npz schema as
+Wraps mackelab/npe-pfn's `TabPFN_Based_NPE_PFN` for the standard benchmark
+pipeline: simulate the task, attach the simulations, draw samples per sbibm
+reference observation, and save in the same npz schema as
 `flow_vs_quantile/{task}_s{seed}_*.npz`. Downstream `c2st_decomposition`
 and `count_modes` consume the file unchanged.
 

@@ -1,7 +1,7 @@
 """TabPFN likelihood-to-evidence ratio estimator for SBI.
 
-This prototype uses TabPFN as an in-context classifier over full
-``(theta, x)`` pairs. Positive examples are joint simulator pairs
+This estimator uses TabPFN as an in-context classifier over full ``(theta, x)``
+pairs. Positive examples are joint simulator pairs
 ``theta ~ p(theta), x ~ p(x | theta)``. Negative examples are shuffled
 pairs approximating ``theta ~ p(theta), x ~ p(x)``. With balanced classes,
 the classifier odds estimate

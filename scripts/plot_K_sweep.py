@@ -4,9 +4,9 @@ Plots joint/marginal/rank C2ST and mode-match fraction vs K for a single
 (task, seed). NSF and FMPE values are shown as horizontal reference lines
 on the C2ST panel for context.
 
-The hypothesis we are testing: gating-network capacity makes large K free.
-If the curves plateau at K ≥ K_required (rather than peak at K_required and
-fall off), then "default K = 8" is a deployable recipe.
+This tests whether increasing gating-network capacity remains stable after the
+required number of components is reached. A plateau for K ≥ K_required supports
+using K = 8 as the default.
 """
 from __future__ import annotations
 

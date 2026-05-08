@@ -12,9 +12,8 @@ Supported tasks (analytic / tractable likelihoods):
   - gaussian_linear     : x = θ + ε,  θ ~ N(0,I), ε ~ N(0, σ² I)
   - gaussian_mixture    : x ~ 0.5·N(θ, σ_1² I) + 0.5·N(θ, σ_2² I)
 
-Other tasks raise NotImplementedError. This is intentional --- we don't
-want to silently fall back to a black-box likelihood (which would defeat
-the "tractable HMC" comparison).
+Other tasks raise NotImplementedError to avoid silently replacing the tractable
+likelihood comparison with a black-box likelihood.
 """
 from __future__ import annotations
 

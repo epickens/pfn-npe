@@ -1,4 +1,4 @@
-"""Run our in-project autoregressive TabPFN density estimator on a benchmark.
+"""Run the in-project autoregressive TabPFN density estimator on a benchmark.
 
 Mirrors `scripts/npe_pfn_baseline.py` but uses `pfn_testing.sbi.ar_density.TabPFNAR`
 instead of `npe_pfn.TabPFN_Based_NPE_PFN`. The output schema matches existing
@@ -6,8 +6,8 @@ instead of `npe_pfn.TabPFN_Based_NPE_PFN`. The output schema matches existing
 `count_modes.py` consume it unchanged.
 
 Cross-task verification: pinball / joint / marg / rank C2ST should match
-`{task}_s{seed}_npe_pfn.npz` results within ±0.02 (TabPFN RNG noise + lack of
-rejection sampling).
+`{task}_s{seed}_npe_pfn.npz` results within ±0.02, allowing for TabPFN RNG
+variation and the absence of rejection sampling.
 """
 from __future__ import annotations
 

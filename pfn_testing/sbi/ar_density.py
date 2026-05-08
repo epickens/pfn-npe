@@ -251,7 +251,7 @@ class TabPFNAR:
         dim_x, dim_theta = self.dim_x, self.dim_theta
 
         # Each row of samples_batch is its own evolving (x_i, θ_<d_sample_i)
-        # vector. Initially just x_i for each row.
+        # vector. Initially x_i for each row.
         samples_batch = x.clone()
         return self._sample_loop(samples_batch, joint_train, dim_x, dim_theta)
 

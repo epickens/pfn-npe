@@ -549,6 +549,31 @@ wheels = [
 ]
 
 [[package]]
+name = "cython"
+version = "3.2.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/91/85/7574c9cd44b69a27210444b6650f6477f56c75fee1b70d7672d3e4166167/cython-3.2.4.tar.gz", hash = "sha256:84226ecd313b233da27dc2eb3601b4f222b8209c3a7216d8733b031da1dc64e6", size = 3280291, upload-time = "2026-01-04T14:14:14.473Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a1/10/720e0fb84eab4c927c4dd6b61eb7993f7732dd83d29ba6d73083874eade9/cython-3.2.4-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:02cb0cc0f23b9874ad262d7d2b9560aed9c7e2df07b49b920bda6f2cc9cb505e", size = 2960836, upload-time = "2026-01-04T14:14:51.103Z" },
+    { url = "https://files.pythonhosted.org/packages/7d/3d/b26f29092c71c36e0462752885bdfb18c23c176af4de953fdae2772a8941/cython-3.2.4-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:f136f379a4a54246facd0eb6f1ee15c3837cb314ce87b677582ec014db4c6845", size = 3370134, upload-time = "2026-01-04T14:14:53.627Z" },
+    { url = "https://files.pythonhosted.org/packages/56/9e/539fb0d09e4f5251b5b14f8daf77e71fee021527f1013791038234618b6b/cython-3.2.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:35ab0632186057406ec729374c737c37051d2eacad9d515d94e5a3b3e58a9b02", size = 3537552, upload-time = "2026-01-04T14:14:56.852Z" },
+    { url = "https://files.pythonhosted.org/packages/85/cc/8f06145ec3efa121c8b1b67f06a640386ddacd77ee3e574da582a21b14ee/cython-3.2.4-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:ff9af2134c05e3734064808db95b4dd7341a39af06e8945d05ea358e1741aaed", size = 2953769, upload-time = "2026-01-04T14:15:00.361Z" },
+    { url = "https://files.pythonhosted.org/packages/55/b0/706cf830eddd831666208af1b3058c2e0758ae157590909c1f634b53bed9/cython-3.2.4-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:67922c9de058a0bfb72d2e75222c52d09395614108c68a76d9800f150296ddb3", size = 3243841, upload-time = "2026-01-04T14:15:02.066Z" },
+    { url = "https://files.pythonhosted.org/packages/ac/25/58893afd4ef45f79e3d4db82742fa4ff874b936d67a83c92939053920ccd/cython-3.2.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:b362819d155fff1482575e804e43e3a8825332d32baa15245f4642022664a3f4", size = 3378083, upload-time = "2026-01-04T14:15:04.248Z" },
+    { url = "https://files.pythonhosted.org/packages/91/4d/1eb0c7c196a136b1926f4d7f0492a96c6fabd604d77e6cd43b56a3a16d83/cython-3.2.4-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:64d7f71be3dd6d6d4a4c575bb3a4674ea06d1e1e5e4cd1b9882a2bc40ed3c4c9", size = 2970064, upload-time = "2026-01-04T14:15:08.567Z" },
+    { url = "https://files.pythonhosted.org/packages/03/1c/46e34b08bea19a1cdd1e938a4c123e6299241074642db9d81983cef95e9f/cython-3.2.4-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:869487ea41d004f8b92171f42271fbfadb1ec03bede3158705d16cd570d6b891", size = 3226757, upload-time = "2026-01-04T14:15:10.812Z" },
+    { url = "https://files.pythonhosted.org/packages/12/33/3298a44d201c45bcf0d769659725ae70e9c6c42adf8032f6d89c8241098d/cython-3.2.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:55b6c44cd30821f0b25220ceba6fe636ede48981d2a41b9bbfe3c7902ce44ea7", size = 3388969, upload-time = "2026-01-04T14:15:12.45Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/8b/fd393f0923c82be4ec0db712fffb2ff0a7a131707b842c99bf24b549274d/cython-3.2.4-cp39-abi3-macosx_10_9_x86_64.whl", hash = "sha256:36bf3f5eb56d5281aafabecbaa6ed288bc11db87547bba4e1e52943ae6961ccf", size = 2875622, upload-time = "2026-01-04T14:15:39.749Z" },
+    { url = "https://files.pythonhosted.org/packages/73/48/48530d9b9d64ec11dbe0dd3178a5fe1e0b27977c1054ecffb82be81e9b6a/cython-3.2.4-cp39-abi3-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl", hash = "sha256:6d5267f22b6451eb1e2e1b88f6f78a2c9c8733a6ddefd4520d3968d26b824581", size = 3210669, upload-time = "2026-01-04T14:15:41.911Z" },
+    { url = "https://files.pythonhosted.org/packages/5e/91/4865fbfef1f6bb4f21d79c46104a53d1a3fa4348286237e15eafb26e0828/cython-3.2.4-cp39-abi3-manylinux2014_armv7l.manylinux_2_17_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:3b6e58f73a69230218d5381817850ce6d0da5bb7e87eb7d528c7027cbba40b06", size = 2856835, upload-time = "2026-01-04T14:15:43.815Z" },
+    { url = "https://files.pythonhosted.org/packages/fa/39/60317957dbef179572398253f29d28f75f94ab82d6d39ea3237fb6c89268/cython-3.2.4-cp39-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:e71efb20048358a6b8ec604a0532961c50c067b5e63e345e2e359fff72feaee8", size = 2994408, upload-time = "2026-01-04T14:15:45.422Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/30/7c24d9292650db4abebce98abc9b49c820d40fa7c87921c0a84c32f4efe7/cython-3.2.4-cp39-abi3-musllinux_1_2_armv7l.whl", hash = "sha256:28b1e363b024c4b8dcf52ff68125e635cb9cb4b0ba997d628f25e32543a71103", size = 2891478, upload-time = "2026-01-04T14:15:47.394Z" },
+    { url = "https://files.pythonhosted.org/packages/86/70/03dc3c962cde9da37a93cca8360e576f904d5f9beecfc9d70b1f820d2e5f/cython-3.2.4-cp39-abi3-musllinux_1_2_i686.whl", hash = "sha256:31a90b4a2c47bb6d56baeb926948348ec968e932c1ae2c53239164e3e8880ccf", size = 3225663, upload-time = "2026-01-04T14:15:49.446Z" },
+    { url = "https://files.pythonhosted.org/packages/b1/97/10b50c38313c37b1300325e2e53f48ea9a2c078a85c0c9572057135e31d5/cython-3.2.4-cp39-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:e65e4773021f8dc8532010b4fbebe782c77f9a0817e93886e518c93bd6a44e9d", size = 3115628, upload-time = "2026-01-04T14:15:51.323Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/fa/d3c15189f7c52aaefbaea76fb012119b04b9013f4bf446cb4eb4c26c4e6b/cython-3.2.4-py3-none-any.whl", hash = "sha256:732fc93bc33ae4b14f6afaca663b916c2fdd5dcbfad7114e17fb2434eeaea45c", size = 1257078, upload-time = "2026-01-04T14:14:12.373Z" },
+]
+
+[[package]]
 name = "dask"
 version = "2026.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -866,15 +891,24 @@ wheels = [
 
 [[package]]
 name = "gpy"
-version = "1.9.9"
+version = "1.13.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "cython", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
     { name = "numpy", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
     { name = "paramz", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
     { name = "scipy", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
     { name = "six", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/67/95/976598f98adbfa918a480cb2d643f93fb555ca5b6c5614f76b69678114c1/GPy-1.9.9.tar.gz", hash = "sha256:04faf0c24eacc4dea60727c50a48a07ddf9b5751a3b73c382105e2a31657c7ed", size = 995060, upload-time = "2019-10-17T08:02:00.932Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/dc/30/9aac3d92db5ea57dfbc15a7ef5d8b0d8db5b32cfca5e9952a284a0ea8b2c/GPy-1.13.2.tar.gz", hash = "sha256:a38256b4dda536a5b5e6134a3924b42d454e987ee801fb6fc8b55a922da27920", size = 1138525, upload-time = "2024-07-23T06:30:27.107Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/02/3c/293597b7c466ca2f2ef44e739a9fde4210259cc9926ad1d97701edb455d4/GPy-1.13.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:b56c71cd272c12845abb205617eb3d227ba6b369066011bffd5d6daf76292be1", size = 1917096, upload-time = "2024-07-23T06:30:03.248Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/f6/bf80c45bbd4d7c91183ba7ec5da33200452fe639f23ff78872ec096cb997/GPy-1.13.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5e73d9188f529c4b9837b526afd786c242ba6bca598fd0f475eb03c0c3622dad", size = 3600188, upload-time = "2024-07-23T06:30:05.913Z" },
+    { url = "https://files.pythonhosted.org/packages/61/d7/5f2fbdbdfb4ebfa04205f47fb09742dec0a4dca441e294ed852884b7313d/GPy-1.13.2-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:385bf6c1d5872d6519d50e2bed1f08bc679d4a351ad0741ae580233934223e3e", size = 1918661, upload-time = "2024-07-23T06:30:10.217Z" },
+    { url = "https://files.pythonhosted.org/packages/73/ad/7cb1221f78e059fb1c5cf8115409bbb5de2a9b1ad3f85d4a04ddebc0053b/GPy-1.13.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f7f3a5d9f4562ec72936db01877406fd42a5020bd59f567ed6649c89769b782b", size = 3813537, upload-time = "2024-07-23T06:30:12.375Z" },
+    { url = "https://files.pythonhosted.org/packages/98/74/0f20626f4f3081d841f93625c8f7ba5af12dd09249705b4d2a2c77b596f6/GPy-1.13.2-cp312-cp312-macosx_10_9_universal2.whl", hash = "sha256:d3514cfcc1b46d2503aa75a6e12e57ca81d29d96e72bfc01f1b9702f4c298b80", size = 1919145, upload-time = "2024-07-23T06:30:16.64Z" },
+    { url = "https://files.pythonhosted.org/packages/47/05/4ee17fd89661d92ed621a95d252ec5800c37cdfe5728d2f49be380f819bf/GPy-1.13.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:39819890941a60685a1ba4b7ae834dfb6ac3c1d1a9aa31b8bd25ad573483a8e8", size = 3752464, upload-time = "2024-07-23T06:30:18.421Z" },
+]
 
 [[package]]
 name = "greenlet"
@@ -2427,6 +2461,7 @@ source = { editable = "." }
 dependencies = [
     { name = "bayesflow", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
     { name = "emcee", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
+    { name = "gpy", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
     { name = "keras", version = "3.12.1", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version < '3.11' and sys_platform == 'darwin') or (python_full_version < '3.11' and sys_platform == 'linux')" },
     { name = "keras", version = "3.14.0", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version >= '3.11' and sys_platform == 'darwin') or (python_full_version >= '3.11' and sys_platform == 'linux')" },
     { name = "matplotlib", marker = "sys_platform == 'darwin' or sys_platform == 'linux'" },
@@ -2459,6 +2494,7 @@ dev = [
 requires-dist = [
     { name = "bayesflow", specifier = ">=2.0.7" },
     { name = "emcee", specifier = ">=3.1.6" },
+    { name = "gpy", specifier = ">=1.13.2" },
     { name = "keras", specifier = ">=3.0" },
     { name = "matplotlib", specifier = ">=3.8" },
     { name = "npe-pfn", marker = "extra == 'npe-pfn'", git = "https://github.com/epickens/npe-pfn.git?rev=c59cc5511194d33824fadeb8fee546ceabe0d309" },

@@ -59,7 +59,7 @@ class DistractorTask:
         )
         self._gmm.fit(fit_data)
 
-        # Fixed column permutation so noise isn't just appended at the end
+        # Fixed column permutation interleaves signal and distractor features.
         self._permutation = rng.permutation(self.dim_x)
 
     def _get_base_task(self):
@@ -106,8 +106,8 @@ class DistractorTask:
     def get_simulator(self):
         """Return simulator that produces augmented observations.
 
-        For ODE base tasks (sir, lotka_volterra), uses the Python/scipy
-        simulators since sbibm's Julia-based ones are broken.
+        ODE base tasks (sir, lotka_volterra) use the Python/scipy simulators
+        from sbibm_utils for portability.
         """
         from pfn_testing.sbi.sbibm_utils import ODE_TASKS, _simulate_ode_task
 

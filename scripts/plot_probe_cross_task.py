@@ -96,10 +96,9 @@ def main() -> None:
     if not data:
         raise SystemExit(f"No probe npzs in {PROBE_DIR}")
 
-    # Drop gaussian_linear from the cross-task headline plot --- analytic
-    # posterior is already linear at L0, so the curve is flat at high R²
-    # and distracts from the L4 transition story. Still appears in the
-    # per-dim detail grid below.
+    # Drop gaussian_linear from the cross-task headline plot: its analytic
+    # posterior is already linear at L0, so the curve is flat at high R².
+    # It still appears in the per-dim detail grid below.
     data_main = {t: d for t, d in data.items() if t != "gaussian_linear"}
 
     FIG_DIR.mkdir(parents=True, exist_ok=True)

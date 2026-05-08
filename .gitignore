@@ -265,6 +265,12 @@ mlruns/
 runs/
 lightning_logs/
 tensorboard/
+pfn_testing/sbi/outputs/
+pfn_testing/sbi/data/
+pfn_testing/sbi/checkpoints/
+pfn_testing/sbi/pretrained/
+results/
+figures/
 
 # Local databases and temporary data
 *.sqlite

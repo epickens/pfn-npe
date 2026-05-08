@@ -3,7 +3,7 @@
 For each (task, seed):
   1. Extract raw TabPFN encoder per-dim concatenated embeddings on
      (x_train, x_val) — same as `scripts/encoder_linear_probes.py`.
-  2. Fit our `TabPFNAR` on (theta_train, x_train) and extract concatenated
+  2. Fit `TabPFNAR` on (theta_train, x_train) and extract concatenated
      AR hidden states for (theta_val, x_val) at the last encoder layer
      (default: 11). Each val row gets its own (x_i, theta_i_<d) prefix.
   3. Run `fit_mean_probe`, `fit_variance_probe`, `fit_quantile_probe` on

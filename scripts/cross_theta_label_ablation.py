@@ -4,16 +4,13 @@ For each label_strategy ∈ {per_dim, random, constant}:
   - Extract layer-by-layer encoder embeddings from a single (task, seed) cell.
   - Run the cross-θ matrix probe.
 
-Saves a side-by-side comparison plot. The point of the ablation is
-defensive: the per-dim specialization story (off-diag-normalized R²
-falling below diag after ~layer 4) should be unique to
-label_strategy='per_dim', because the other strategies do not have a
-per-dim signal during extraction. The cross-θ matrix for random / constant
-is broadcast (every source slot is the same shared embedding), so the
-off-diag should equal the diag by construction.
+Saves a side-by-side comparison plot. The per-dim strategy should be the only
+setting where off-diagonal-normalized R² falls below the diagonal after early
+layers, because the random and constant strategies do not provide a
+parameter-indexed signal during extraction. Their cross-θ matrices are
+broadcast, so off-diagonal and diagonal entries should match by construction.
 
-Default: slcp seed 42 (D=5, dim_x=8 — fastest cell with rich enough
-posterior to see the per_dim phase transition). Override via flags.
+Default: slcp seed 42 (D=5, dim_x=8). Override via flags.
 
 Output:
   - pfn_testing/sbi/outputs/layer_ablation/cross_theta/{task}_s{seed}_ls{strategy}.npz

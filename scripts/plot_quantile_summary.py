@@ -7,7 +7,7 @@ produces a 4-panel figure:
   B. Per-task box plot of best-layer calibration error
      (mean |empirical_τ − τ| across τ).
   C. Per-task box plot of layer-range Δ pinball (max − min over layers) —
-     analog of "is there a layer-localized story?"
+     a measure of layer localization.
   D. Best-layer IQR-CV (CV of predicted IQR across val examples) vs the
      CAA-steer max|ΔR²| (loaded from the steer outputs). Tests whether
      tasks where the probe surfaces large posterior-scale variation are

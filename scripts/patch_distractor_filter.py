@@ -151,7 +151,8 @@ def patched_transform_all_layers(
         # Only the test-row portion of layer-k's activation is replaced with
         # source's test rows. Context rows stay as-is. This lets recipient's
         # distract-context still cross-attend to patched-clean test rows,
-        # producing variation across k instead of a trivial "run source from k".
+        # producing variation across k rather than replacing the full forward
+        # pass with the source activation.
         for k in patch_layers:
             src_act = source_cap[k]
             fin_cap: dict = {}

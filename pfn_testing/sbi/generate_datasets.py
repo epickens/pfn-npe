@@ -2,8 +2,8 @@
 
 Decouples simulation (CPU-bound) from training (GPU-bound) so that:
 - Datasets are fixed and reproducible
-- GPU jobs just load data, no simulator dependencies
-- Crash recovery is trivial (skip existing files)
+- GPU jobs load fixed arrays instead of running simulators
+- Interrupted runs can resume by skipping existing files
 
 Usage:
     # Generate all single-task datasets (48 files)
@@ -12,7 +12,7 @@ Usage:
     # Also generate multi-task mixed datasets (60 files total)
     uv run python -m pfn_testing.sbi.generate_datasets --multi
 
-    # Just one task/budget for testing
+    # Generate a single task/budget for testing.
     uv run python -m pfn_testing.sbi.generate_datasets \
         --tasks two_moons_distractors --budgets 1000 --seeds 42
 """

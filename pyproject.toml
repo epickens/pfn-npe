@@ -32,6 +32,7 @@ classifiers = [
 dependencies = [
     "bayesflow>=2.0.7",
     "emcee>=3.1.6",
+    "gpy>=1.13.2",
     "keras>=3.0",
     "matplotlib>=3.8",
     "numpy>=1.26",

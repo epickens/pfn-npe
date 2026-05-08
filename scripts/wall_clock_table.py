@@ -121,7 +121,7 @@ def main() -> None:
                          "a self-contained `\\begin{tabular}...\\end{tabular}` "
                          "(no `\\caption` / `\\label`) suitable for `\\input{}`.")
     ap.add_argument("--from-csv", type=Path, default=None,
-                    help="Skip running anything and just (re)generate the LaTeX "
+                    help="Skip timing runs and regenerate the LaTeX "
                          "fragment from an existing wall_clock.csv.")
     args = ap.parse_args()
 
@@ -131,7 +131,7 @@ def main() -> None:
     if args.methods is not None:
         methods_to_run = [m for m in METHODS if m["label"] in args.methods]
 
-    # ─── --from-csv shortcut: just regenerate the LaTeX fragment ───────────
+    # Regenerate the LaTeX fragment from an existing timing CSV.
     if args.from_csv is not None:
         rows = []
         with args.from_csv.open() as f:

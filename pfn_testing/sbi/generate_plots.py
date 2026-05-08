@@ -1,6 +1,6 @@
 """Generate budget sweep plots with SBIBM baselines overlaid.
 
-Loads our TabPFN + raw feature results from the outputs directory,
+Loads TabPFN + raw-feature results from the outputs directory,
 pulls SBIBM precomputed baselines (NPE, SNPE, SNLE), and optionally
 includes fresh sbi baseline results.
 
@@ -134,7 +134,7 @@ def merge_results(
     ours: dict[str, dict[int, dict]],
     baselines: dict[str, dict[int, dict]],
 ) -> dict[str, dict[int, dict]]:
-    """Merge our results and SBIBM baselines into a single structure."""
+    """Merge local results and SBIBM baselines into a single structure."""
     merged: dict[str, dict[int, dict]] = {}
     for task in TASKS:
         merged[task] = {}
@@ -170,7 +170,7 @@ def main():
     )
     args = parser.parse_args()
 
-    print("Loading our results...")
+    print("Loading local results...")
     ours = load_our_results()
     tasks_with_data = [t for t in TASKS if ours.get(t)]
     for t in tasks_with_data:
@@ -247,7 +247,7 @@ def main():
             "markersize": 4,
         }
 
-    # Plot order: our methods first, then fresh sbi, then SBIBM precomputed
+    # Plot order: local methods first, then fresh sbi, then SBIBM precomputed.
     methods = ["tabpfn", "raw"] + sbi_fresh_keys + args.baselines
 
     # Generate combined budget curves

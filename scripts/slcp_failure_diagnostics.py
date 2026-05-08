@@ -15,8 +15,8 @@ The diagnostics are intentionally post-processing only:
   - HDR 50/80 volume-proxy ratios
 
 The rank histograms use the fixed sbibm reference observations and saved
-theta_true values, so they are a quick calibration proxy rather than full SBC
-over newly simulated observations.
+theta_true values, so they are a fixed-reference calibration diagnostic rather
+than full SBC over newly simulated observations.
 """
 
 from __future__ import annotations

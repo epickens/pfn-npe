@@ -8,10 +8,10 @@ fit_quantile_probe on each; report:
   - σ² NLL (heteroscedastic Gaussian)
   - pinball (multi-τ quantile regression)
 
-If linear probe R² and σ² NLL are comparable across encoders, the
-information IS there, and NSF just can't exploit v3's representation
-at the same training budget. If v3 degrades the probes too, the encoder
-has actually destroyed θ-relevant structure.
+Comparable linear-probe R² and σ² NLL across encoders indicate that the v3
+representation preserves θ-relevant information even when the downstream NSF
+does not exploit it at the same training budget. Degraded probe metrics indicate
+loss of θ-relevant structure in the encoder representation.
 """
 from __future__ import annotations
 

@@ -2,9 +2,8 @@
 
 Implements Sklar's decomposition: posterior p(θ|x) = product of marginals
 F_d(θ_d|x) joined by a copula c(u_1, ..., u_D | x) on uniformized samples.
-Targets the joint-structure failure mode our diagnostics identified —
-marginals get their own dedicated estimator (the quantile probe), and the
-copula focuses purely on dependence between θ-dims.
+Targets joint-structure errors by assigning marginal recovery to a dedicated
+quantile probe while the copula models dependence between θ-dimensions.
 
 Two variants:
 
@@ -426,10 +425,8 @@ class FullyNeuralCopulaSBI(NeuralCopulaSBI):
     """Per-dim 1D NSF marginals + neural copula on Gaussianized residuals.
 
     Replaces the linear quantile-probe marginals with **per-dim 1D NSFs**
-    so both halves of the Sklar decomposition are non-linear flows.
-    Reviewers won't ask why we used a linear marginal model when 1D NSFs
-    are available — this version puts the strongest available marginals
-    in front of the copula.
+    so both halves of the Sklar decomposition are non-linear flows. This variant
+    tests whether stronger marginal estimators improve the downstream copula.
 
     Pipeline:
       1. Train D 1D conditional NSFs, one per θ-dim. Each models
