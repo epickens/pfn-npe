@@ -1,5 +1,7 @@
 # PFN-NPE
 
+**We now have a pre-print up!** It can be found here: https://arxiv.org/pdf/2605.07765
+
 Research code for using frozen TabPFN representations as summary statistics for
 simulation-based inference (SBI). The repository contains the PFN-NPE
 implementation, comparison baselines, diagnostic experiments, and scripts used
